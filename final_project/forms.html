@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Your Personal Webpage</title>
+    
+   <link href="css/styles.css" rel="stylesheet" />
+   <link href="css/forms.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+    <div id="grid">
+        <div id="nav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="aboutme.html">Bio</a></li>
+                    <li><a href="forms.html">Questions</a></li>
+                    <li><a href="list.html">Schedule</a></li>
+                    <li><a href="photo_portfolio.html">Gallery</a></li>
+                </ul> 
+            </nav>
+        </div>    
+
+        <article id="socials">
+            <div class="image-links">
+                <ul>
+                    <li class="pad"><a href="mailto:d.bameniculescu@gmail.com"><img src="images/email icon.png" alt="Email" width="50" height="50"></a></li>
+                    <li class="pad"><a href="https://www.linkedin.com/in/andrei-niculescu-b81baa287/"><img src="images/linkedin icon.png" alt="LinkedIn" width="50" height="50"></a></li>
+                    <li class="pad"><a href="https://github.com/FireRaptor"><img src="images/github icon.png" alt="GitHub" width="50" height="50"></a></li>
+                    <li class="pad"><a href="https://instagram.com/d4v1dan"><img src="images/insta icon.png" alt="Instagram" width="50" height="50"></a></li>
+                    <li><img src="images/nameproject1.png" width="50" height="100%"></li>
+                </ul>
+            </div>
+        </article>
+
+  <form action="#" method="post" onsubmit="showAnswers(); return false;">
+
+    <fieldset>
+        <legend>Question 1: What is my favorite sport?</legend>
+        <label><input type="radio" name="q1" value="option1"> Football</label>
+        <label><input type="radio" name="q1" value="soccer"> Soccer</label>
+        <label><input type="radio" name="q1" value="option3"> Basketball</label>
+        <label><input type="radio" name="q1" value="option4"> Golf</label>
+    </fieldset>
+
+  <form action="#" method="post" onsubmit="showAnswers(); return false;">
+
+    <fieldset>
+        <legend>Question 2: Which math classes did I take in HS?</legend>
+        <label><input type="checkbox" name="q2" value="calc1"> Calculus 1</label>
+        <label><input type="checkbox" name="q2" value="calc2"> Calculus 2</label>
+        <label><input type="checkbox" name="q2" value="discretemath"> Discrete Math</label>
+        <label><input type="checkbox" name="q2" value="stats"> Statistics</label>
+    </fieldset>
+
+  <form action="#" method="post" onsubmit="showAnswers(); return false;">
+
+    <fieldset>
+        <legend>Question 3: Who showed up during the last Fortnite event?</legend>
+        <label><input type="radio" name="q3" value="eminem"> Eminem</label>
+        <label><input type="radio" name="q3" value="option2"> Taylor Swift</label>
+        <label><input type="radio" name="q3" value="option3"> Steph Curry</label>
+        <label><input type="radio" name="q3" value="option4"> Lionel Messi</label>
+    </fieldset>
+
+  <form action="#" method="post" onsubmit="showAnswers(); return false;">
+
+    <fieldset>
+        <legend>Question 4: What are some of my hobbies?</legend>
+        <label><input type="checkbox" name="q4" value="photography"> Photography</label>
+        <label><input type="checkbox" name="q4" value="d&d"> D&D</label>
+        <label><input type="checkbox" name="q4" value="violin"> Violin</label>
+        <label><input type="checkbox" name="q4" value="altosax"> Alto Sax</label>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function showAnswers() {
+      // Replace these with the correct answers for each question
+      var correctAnswers = {
+        q1: "Soccer",
+        q2: "All of the above",
+        q3: "Eminem",
+        q4: "All of the above"
+      };
+
+      // Generate answer string
+      var answerString = "";
+      for (var question in correctAnswers) {
+        answerString += question + ": " + correctAnswers[question] + "\n";
+      }
+
+      // Display correct answers in a popup window
+      alert("Correct Answers:\n\n" + answerString);
+    }
+  </script>
+
+    <article id="p">
+        <h3>Andrei's Q&A</h3>
+        <p>Here's a little more about me through  a Q&A style page.</p>
+
+        <blockquote>
+            <br>
+            "The only thing I know is that I know nothing."
+            <footer>- Socrates</footer>
+        </blockquote>
+        
+        <label for="userName">Enter the name of the author of the quote:</label>
+        <input type="text" id="userInput" name="userInput">
+        <br>
+        <br>
+
+        <iframe width="360" height="280" src="https://www.youtube.com/embed/XxaE6UZt4J4?si=ITpR8G_osxs8DbTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+</body>
+</html>

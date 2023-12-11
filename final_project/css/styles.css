@@ -1,0 +1,150 @@
+@charset "utf-8";
+body {
+   /* width: 73.85%; */
+   /* min-width: 640px;
+   max-width: 1080px; */
+   /* margin-top: 30px;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto; */
+   background-color: tan; /* Optional background color */
+}
+
+a {
+    text-decoration: none; /* Remove uxnderline */
+    color: inherit; /* Use the default text color */
+}
+
+a:visited {
+    color: inherit; /* Use the default text color for visited links */
+}
+
+div#grid {
+    display: grid;
+    grid-template-columns: 7% 40% 40%;
+    grid-template-rows: 10% 90%;
+    grid-gap: 2%;
+    margin:  0 10% 0 10%;
+}
+
+article#socials {
+    /* padding-left: 10px; */
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin-top: 0;
+    height: 100%;
+}
+
+article#socials ul {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+article#socials ul li.pad {
+    padding-bottom: 35%;
+}
+
+div#nav {
+	margin: 0 0 0 0;
+    grid-row: 1;
+    grid-column: 3;
+    width: 100%
+}
+
+nav ul li {
+	display: table-cell;
+	width: 20%;
+	text-align: center;
+	margin-right: 0%;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+nav ul li a {
+    padding: 0 5% 0 5%;
+	margin-bottom: 0;
+    font-family: "Segoe Script";
+    font-weight: bold;
+    font-size: 0.83em;
+}
+
+nav {
+    background-color: rgb(148, 171, 127);
+	display: table;
+	width: 100%;
+	/* margin: 0 0 0 0;
+    grid-row: 1;
+    grid-column: 3; */
+}
+
+nav a {
+    display: block;
+}
+
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline; /* Underline when hovered */
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+    div#grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 40% 40% 10%;
+        grid-gap: 2%;
+        margin:  0 10% 0 10%;
+    }
+
+    article#socials {
+        /* padding-left: 10px; */
+        display: table;
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 0;
+        height: 100%;
+    }
+    
+    article#socials ul {
+        display: table-row;
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+        height: 100%;
+
+    }
+    
+    article#socials ul li.pad {
+        width: 15%;
+        /* height: 100%; */
+        display: table-cell;
+    }
+
+    /* article#socials ul li {
+        display: table-cell;
+        width: 15%;
+        height: 100%;
+    }
+     */
+    article#socials ul li img#nameimage {
+        display: table-cell;
+        rotate: 90deg;
+        height: 40%;
+        /* width: 50px; */
+    }
+
+    div#nav {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    div.image-links{
+        height: 100%;
+    }
+}

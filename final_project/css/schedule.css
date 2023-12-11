@@ -1,0 +1,66 @@
+h1 {
+    font-family: "Segoe Script";
+    font-weight: bolder;
+    grid-row: 1;
+    grid-column: 2;
+
+}
+
+table.schedule {
+    grid-row: 2;
+    grid-column: 2 / span 2;
+    background: white;
+    border: 15px black;
+    border-collapse: collapse;
+    font-size: 0.75em;
+    width: 100%;
+ }
+ 
+ /* Table Cell Styles */
+ table.schedule th, table.schedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    vertical-align: top;
+ }
+ 
+ /* Table Caption Styles */
+ table.schedule caption {
+    caption-side: bottom;
+    text-align: right;
+ }
+ 
+ /* Row Group Styles */
+ table.schedule thead {
+    background: tan;
+    color: white;
+ }
+ table.schedule tfoot {
+    background: black;
+    color: white;
+ }
+ table.schedule thead tr {
+    height: 30px;
+ }
+ table.schedule tbody tr {
+    height: 40px;
+ }
+ 
+ /* Column Group Styles */
+ col#firstCol {
+    background: rgb(148, 171, 127);
+ }
+ col.dayCols {
+    background: darkgray;
+ }
+
+ @media (max-aspect-ratio: 1/1) {
+   img#main-image {
+       grid-row: 2;
+       grid-column: 1;
+   }
+
+   article#p {
+       grid-row: 3;
+       grid-column: 1;
+   }
+}

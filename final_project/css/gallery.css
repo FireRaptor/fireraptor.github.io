@@ -1,0 +1,28 @@
+img#img1 {
+    width: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    width: 90%;
+}
+
+div#img23 {
+    background-color: tan; 
+    grid-row: 2;
+    grid-column: 3;
+}
+
+div#img23 img {
+    width: 100%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    img#main-image {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    article#p {
+        grid-row: 3;
+        grid-column: 1;
+    }
+}
