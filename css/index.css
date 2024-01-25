@@ -1,5 +1,5 @@
 img#main-image {
-    width: 100%;
+    width: 98%;
     grid-row: 1 / span 2;
     grid-column: 2;
 }
